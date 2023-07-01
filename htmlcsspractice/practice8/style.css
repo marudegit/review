@@ -5,3 +5,45 @@
   box-sizing: border-box;
 }
 
+main {
+  width: 960px;
+  margin: 50px auto;
+}
+
+.list {
+  margin-bottom: 50px;
+}
+
+.list-item {
+  list-style: none;
+  padding: 20px;
+}
+
+.list-item:nth-child(odd) {
+  background-color: #eee;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-item {
+  width: 30%;
+  height: 200px;
+  background-color: yellow;
+  margin-right: 5%;
+  margin-bottom: 40px;
+}
+
+.box-item:nth-child(3n){
+  margin-right: 0;
+}
+
+.box-item:nth-child(4n+1) {
+  background-color: orange;
+}
+
+.box-item:nth-child(n+7){
+  margin-bottom: 0;
+}
