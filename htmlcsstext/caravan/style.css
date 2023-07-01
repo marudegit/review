@@ -6,7 +6,7 @@
   color: #6c6b6b;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -39,13 +39,30 @@ header .heading {
   /* 横幅いっぱい */
   height: 300px;
   /* 高さ300px */
+  background-image: url(img/mv.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .main-visual-content {
-  width: 350px;
+  width: 40%;
   /* 横幅350px */
   height: 300px;
   /* 親の高さに揃える */
+  background-color: rgb(0, 0, 0, 0.5);
+  text-align: center;
+  /* 文字を中央揃えにする */
+  padding-top: 105px;
+  /* 上側の内側余白で垂直方向の位置を調整 */
+}
+
+.main-visual-text{
+  color: white;
+}
+
+.main-visual-name{
+  margin-top: 30px;
+  color: white;
 }
 
 .main {
