@@ -1,0 +1,67 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  padding: 30px 20px;
+  justify-content: flex-end;
+  background-color: red;
+}
+
+header div {
+  flex-basis: 140px;
+  height: 70px;
+  background-color: pink;
+  margin: 0 10px;
+}
+
+header div:nth-child(1) {
+  margin-right: auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  background-color: yellowgreen;
+  width: 300px;
+}
+
+.right {
+  padding: 20px;
+  max-width: 700px;
+  flex-grow: 1;
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.right div {
+  background-color: yellow;
+  flex-basis: 200px;
+  height: 130px;
+  margin: 10px;
+}
+
+footer {
+  background-color: blue;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer div {
+  background-color: lightblue;
+  flex-basis: 45%;
+  max-width: 600px;
+  height: 40px;
+  margin: 10px;
+}
